@@ -4,109 +4,162 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Syntō Age — Entrance</title>
+
+  <!-- Inter — modern industry standard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root { --fg:#111; --muted:#555; --bg:#fff; }
+    :root {
+      --fg: #111;
+      --muted: #666;
+      --bg: #ffffff;
+      --border: rgba(0,0,0,0.15);
+    }
 
-    html, body { height: 100%; }
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--fg);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-family: "American Typewriter", "Courier Prime", "Courier New", Courier, monospace;
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-weight: 400;
+      letter-spacing: -0.01em;
     }
 
-    .wrap{
-      width:min(920px, 92vw);
-      text-align:center;
-      padding: 56px 0;
+    .wrap {
+      width: min(900px, 92vw);
+      padding: 64px 0;
+      text-align: center;
     }
 
-    h1{
-      margin: 0 0 14px 0;
-      font-size: clamp(56px, 8vw, 92px);
-      letter-spacing: 0.5px;
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: clamp(56px, 8vw, 96px);
+      font-weight: 700;
+      letter-spacing: -0.035em;
       line-height: 1;
     }
 
-    .subtitle{
-      margin: 0 0 22px 0;
-      font-size: 14px;
-      color: var(--muted);
-      letter-spacing: 1.8px;
+    .subtitle {
+      margin-bottom: 28px;
+      font-size: 13px;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
+      color: var(--muted);
     }
 
-    .links{
-      margin: 0 0 30px 0;
-      display:flex;
+    .links {
+      display: flex;
+      justify-content: center;
       gap: 14px;
-      justify-content:center;
       flex-wrap: wrap;
+      margin-bottom: 40px;
     }
 
-    .links a{
-      display:inline-block;
-      text-decoration:none;
+    .links a {
+      text-decoration: none;
       color: var(--fg);
-      border: 1px solid rgba(0,0,0,0.18);
-      padding: 10px 14px;
+      border: 1px solid var(--border);
+      padding: 10px 16px;
       border-radius: 999px;
       font-size: 14px;
-      line-height: 1;
-      transition: transform 0.08s ease, border-color 0.08s ease;
+      font-weight: 500;
+      transition: border-color 0.15s ease, transform 0.15s ease;
     }
-    .links a:hover{
-      transform: translateY(-1px);
+
+    .links a:hover {
       border-color: rgba(0,0,0,0.35);
+      transform: translateY(-1px);
     }
 
-    .synopsis{
+    .synopsis {
+      max-width: 820px;
       margin: 0 auto;
-      width: min(820px, 92vw);
-      font-size: 16px;
-      line-height: 1.7;
+      font-size: 17px;
+      line-height: 1.75;
       color: #222;
-      text-align: center;
-      white-space: normal;
     }
 
-    .synopsis b{ font-weight: 700; }
+    .synopsis p {
+      margin: 0 0 22px 0;
+    }
 
-    .footer{
-      margin-top: 28px;
+    .synopsis b {
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 36px;
       font-size: 13px;
       color: var(--muted);
     }
   </style>
 </head>
+
 <body>
   <main class="wrap">
     <h1>Syntō Age</h1>
     <div class="subtitle">Entrance</div>
 
-    <nav class="links" aria-label="Links">
-      <a href="https://t.me/syntoera" target="_blank" rel="noopener noreferrer">Telegram · @syntoera</a>
-      <a href="https://yuriusvento.github.io/syntopolis/" target="_blank" rel="noopener noreferrer">Website · Texts & Documents</a>
+    <nav class="links">
+      <a href="https://t.me/syntoera" target="_blank" rel="noopener">Telegram · @syntoera</a>
+      <a href="https://yuriusvento.github.io/syntopolis/" target="_blank" rel="noopener">
+        Website · Texts & Documents
+      </a>
     </nav>
 
     <section class="synopsis">
-      Syntō Age (the Era of Agreement) is a new epoch and an integrated system of principles and documents describing humanity’s transition to its next stage of development.
-      <br><br>
-      Its foundation is a <b>Unified System of Education</b> as a single “operating system” for everyone: a shared conceptual space, shared core knowledge, and shared values that make thinking compatible and enable genuine mutual understanding.
-      <br><br>
-      Its ethical engine is <b>Hedonism of Higher Pleasure</b>, culminating in love at the level of <b>agápe (ἀγάπη)</b> — creation, the transmission of knowledge, and lived participation as the highest form of pleasure.
-      <br><br>
-      Its social logic is the integration of humanity into a <b>single organism</b>, in which every person is unconditionally significant and fulfills a distinct function. Within this logic, private property ceases to be the central motivation and gives way to <b>use, responsibility, and contribution</b>.
-      <br><br>
-      Its technological basis lies in new instruments of <b>transparency and verifiability</b> in action and communication, reducing distortion, informational deformation, and speculation.
-      <br><br>
-      <b>Syntōpolis</b> is the first practical step within the Syntō Age — the initial form of implementing this system as a concrete structure and environment.
-      <br><br>
-      <b>Syntō</b> is the inner mechanism of conscious agreement and syntonization with this evolutionary vector.
+      <p>
+        Syntō Age (the Era of Agreement) is a new epoch and an integrated system of principles and documents
+        describing humanity’s transition to its next stage of development.
+      </p>
+
+      <p>
+        Its foundation is a <b>Unified System of Education</b> as a single “operating system” for everyone:
+        a shared conceptual space, shared core knowledge, and shared values that make thinking compatible
+        and enable genuine mutual understanding.
+      </p>
+
+      <p>
+        Its ethical engine is <b>Hedonism of Higher Pleasure</b>, culminating in love at the level of
+        <b>agápe (ἀγάπη)</b> — creation, the transmission of knowledge, and lived participation as the
+        highest form of pleasure.
+      </p>
+
+      <p>
+        Its social logic is the integration of humanity into a <b>single organism</b>, in which every
+        person is unconditionally significant and fulfills a distinct function. Within this logic,
+        private property ceases to be the central motivation and gives way to
+        <b>use, responsibility, and contribution</b>.
+      </p>
+
+      <p>
+        Its technological basis lies in new instruments of <b>transparency and verifiability</b> in action
+        and communication, reducing distortion, informational deformation, and speculation.
+      </p>
+
+      <p>
+        <b>Syntōpolis</b> is the first practical step within the Syntō Age — the initial form of
+        implementing this system as a concrete structure and environment.
+      </p>
+
+      <p>
+        <b>Syntō</b> is the inner mechanism of conscious agreement and syntonization with this evolutionary
+        vector.
+      </p>
     </section>
 
     <div class="footer">© Syntō</div>
